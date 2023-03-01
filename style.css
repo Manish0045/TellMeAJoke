@@ -6,7 +6,7 @@
 html, body {
   height: 100vh;
   width: 100vw;
-  background: repeating-conic-gradient( blue, white 10%,cyan 25%);
+  background: cyan;
   background-size: cover;
 }
 ::-webkit-scrollbar{
@@ -15,22 +15,26 @@ html, body {
 
 .container{
   display: flex;
-/*   flex-direction: row; */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 220px;
   height: 300px;
   width: 550px;
-  border: 3px solid purple;
+  border: 3px solid #ff0fff;
   border-radius: 20px;
-  background: cyan;
+  background: #e907c3;
   box-sizing: border-box;
-  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
-
+  box-shadow: 5px 5px 8px #1ef691, 10px 10px 8px red, 15px 15px 8px green;
   color: purple;
+  
   font-size: 2rem;
   padding: 10px 2px 2px 5px;
   text-align: center;
+}
+#jokes{
+  background: lime;
+  padding: 5px;
+  width: fit-content;
 }
 
 h2{
@@ -52,8 +56,7 @@ h2{
   text-align: center;
   height: 45px;
   width: 100px;
-  margin-left: 500px;
-  margin-top: 25px;
+  margin-top: 80px;
 }
 
 .jokebtn:hover {
@@ -101,23 +104,25 @@ h2{
 
 @media(min-width:900px){
   .container{
-  display: flex;
-/*   flex-direction: row; */
-  align-items: center;
-  justify-content: center;
-  margin-left: 350px;
-  height: 300px;
-  width: 500px;
-  border: 3px solid purple;
-  border-radius: 20px;
-  background: #14f0f0;
-  box-sizing: border-box;
-  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
-
-  color: purple;
-  font-size: 2rem;
-  padding: 10px 2px 2px 5px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 300px;
+    width: 500px;
+    border: 3px solid purple;
+    border-radius: 20px;
+    background: #14f0f0;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+    background: lavender;
+    color: purple;
+    font-size: 2rem;
+    padding: 10px 2px 2px 5px;
+    text-align: center;
 }
 
   .jokebtn {
@@ -126,10 +131,10 @@ h2{
   background: orange;
   border-radius:80px;
   text-align: center;
+    justify-content: center;
   height: 45px;
   width: 100px;
-  margin-left: 680px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 }
 
@@ -137,10 +142,9 @@ h2{
 @media(max-width:450px){
   .container{
   display: flex;
-/*   flex-direction: row; */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 5px;
   height: 300px;
   width: 280px;
   border: 3px solid purple;
@@ -148,7 +152,7 @@ h2{
   background: #14f0f0;
   box-sizing: border-box;
   box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
-
+  
   color: purple;
   font-size: 2rem;
   padding: 10px 2px 2px 5px;
